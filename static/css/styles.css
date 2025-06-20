@@ -1,0 +1,88 @@
+/* Reset and base styles */
+.blue1{
+    align-content: center;
+    color:white;
+    background-color: darkblue;
+}
+html{
+    align-content: center
+}
+table {
+  border-collapse: separate; /* Important for border-radius to work */
+  border-spacing: 100;      /* Adds space between cells */
+  margin: auto;
+}
+
+th, td {
+  border: 20 solid darkblue;
+  border-radius: 120;       /* Rounded corners */
+  padding: 100;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+th{
+    color:white;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: center;
+    align-content: center;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Form and input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}

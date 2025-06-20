@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Executive Coaching System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="center">
+        <table border=20;bgcolor="darkblue";>
+            <div class="blue1" >
+                <th bgcolor="darkblue">
+                    <header style=color:white;>
+                        <h1>Good Morning Rachel!</h1>
+                        <p>Here's our leadership focus today...</p>
+                    </header>         
+                
+                    <section class="avatar">
+                        <img src="static/images/Polaris.png" width="190" height="190" alt="User Avatar">
+                    </section>
+                </th>
+            </div>
+            
+          
+                <main>
+                <tr><td>
+                    <section align="center">
+                        <h2>Ask Your Coach</h2>
+                        <form method="POST">
+                            <input type="text" name="coach_input" placeholder="<type here or click the voice icon above>" required>
+                            <button type="submit">Ask</button>
+                        </form>
+                        <p>{{ coach_response }}</p>
+                    </section>
+                </td></tr>
+                <tr><td>
+                    <section>
+                        <h2>Upcoming Meetings</h2>
+                        <ul>
+                            <li>10:00 AM: Meet the CFO</li>
+                            <li>01:00 PM: Leadership Forum</li>
+                            <li>04:00 PM: 1:1 with Lisa Wang</li>
+                        </ul>
+                    </section>
+                </td></tr>
+                <tr><td>
+                    <section>
+                        <h2>Your Team Snapshot</h2>
+                        <ul>
+                            <li>Alex Patel – ✅ Completed the negotiation course</li>
+                            <li>Sam Jones – ⚠️ Low engagement, possible coaching</li>
+                            <li>Lisa Meir – 🎉 Birthday</li>
+                        </ul>
+                    </section>
+                </td></tr>
+                <tr><td>
+                    <section>
+                        <h2>End of Day Recap</h2>
+                        <ul>
+                            <li>✅ Successful leadership presentation</li>
+                            <li>✅ Carved out time for mentoring a peer</li>
+                            <li>✅ Scheduled a follow-up meeting to proceed with your sales strategy next quarter</li>
+                        </ul>
+                    </section>
+                    </td></tr>
+                
+                </main>
+                <tr><td>
+                    <div class="blue1">
+                        <footer bgcolor="darkblue" ;color="white">
+                            <p>Executive Coaching System © 2024</p>
+                        </footer>
+                    </div>
+                </td></tr>
+        </table>
+    </div>
+</body>
+</html>
